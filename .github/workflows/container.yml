@@ -25,8 +25,8 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Verify AWS CLI Installation
-        run: aws --version  # ✅ Checks that AWS CLI is installed
+      - name: Check AWS CLI Version (Ensure Installed)
+        run: aws --version  # ✅ Debugging step
 
       - name: Configure AWS Region
         run: aws configure set region us-east-1
